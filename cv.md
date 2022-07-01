@@ -84,3 +84,11 @@ void main()
 ## Work Experience
 
 I believe that my biggest work experience is Sunset Forest game development I previously mentioned. It has been going since the summer of 2020 and is planned to be finished by the end of this summer. You can try the [current build](https://petrik33.itch.io/sunset-forest) which dates back to the 3rd of May.
+
+## Education
+
+- Student of BSU FAMCS (1st course)
+- RS-School JS/Front-End - Stage0 (in progress)
+- Game Maker self-education
+- [MDN Web Docs](https://developer.mozilla.org/ru/) ["HTML - structuring the web"](https://developer.mozilla.org/ru/docs/Learn/HTML) course
+- [Web.dev](https://web.dev/) [learn CSS](https://web.dev/i18n/ru/learn/css/) course
