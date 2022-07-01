@@ -92,3 +92,20 @@ I believe that my biggest work experience is Sunset Forest game development I pr
 - Game Maker self-education
 - [MDN Web Docs](https://developer.mozilla.org/ru/) ["HTML - structuring the web"](https://developer.mozilla.org/ru/docs/Learn/HTML) course
 - [Web.dev](https://web.dev/) [learn CSS](https://web.dev/i18n/ru/learn/css/) course
+
+## Languages
+
+### English
+
+10 years of studying with personal teacher and 2 years of constant speaking practice with native speakers and other foreigners speaking English.
+
+- B2+ level according to my personal experience and self-assessment
+- C1 level of English according to EPAM Examinator Test
+
+![Test completion screenshot](<./Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(978).png>)
+
+### Others
+
+- Russian - native speaker
+- Belarusian - secret admirer
+- Spanish - Duolingo 1st chapter (the owl made me write it)
