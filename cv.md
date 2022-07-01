@@ -9,6 +9,8 @@
 
 ## About Me
 
+![My photo(very attractive boy)](<./Images/photo_2022-06-29_13-48-43%20(2).jpg>)
+
 I am currently a first-course student of Belarusian State Univerity's Faculty of Applied Maths and Computer Science. The spheres of my interest in the world of IT are:
 
 - Front-End Web Development
