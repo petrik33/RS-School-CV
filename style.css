@@ -5,7 +5,7 @@ html {
 body {
   margin-inline: auto;
   width: 80vw;
-  padding-inline: 2em;
+  padding-inline: 1.5em;
 
   border: 3px solid #ac375a;
   border-radius: 2em;
@@ -13,6 +13,8 @@ body {
 }
 
 header {
+  display: flex;
+
   margin-block-start: 2em;
   margin-inline: auto;
 
@@ -25,8 +27,19 @@ header {
   background-color: #ac375a;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
+header h2 {
+  font-size: 2em;
+  margin-top: -0.75em;
+}
+
+
 main {
   display: flex;
+  justify-content: space-evenly;
 
   margin-block-start: 5%;
   width: 100%;
@@ -55,11 +68,13 @@ main {
 
 div.additional-info {
   flex: 1;
+  min-width: min-content;
 
   padding-inline: 1em;
 
   color: #fdfdfd;
 
+  border-radius: 2em;
   background-color: #2d3846;
 }
 
@@ -68,13 +83,14 @@ div.additional-info a {
 }
 
 div.main-info {
-  flex-grow: 2;
+  flex: 1;
 
-  min-width: 0;
+  min-width: min-content;
   padding-inline: 1em;
 
   color: #2d3846;
 
+  border-radius: 2em;
   background-color: #fdfdfd;
 }
 
@@ -107,4 +123,17 @@ footer {
 
   text-align: center;
   font-size: 3ch;
+}
+
+ul.contacts-list {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.contacts-list li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ac375a; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
