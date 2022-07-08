@@ -1,8 +1,10 @@
 html {
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 body {
+
   margin-inline: auto;
   width: 80vw;
   padding-inline: 1.5em;
