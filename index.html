@@ -4,77 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <title>Petrikevich CV</title>
   </head>
   <body>
-    <h1>Timofey Petrikevich</h1>
-    <h2>Contact Information</h2>
-    <ul>
-      <li>Email: petrik3003@gmail.com</li>
-      <li>Discord: petrik33#0076</li>
-      <li>Telegram: @IamAnAlligator</li>
-      <li>Phone: +375-29-199-04-88</li>
-    </ul>
-    <h2>About Me</h2>
-    <p>
+    <header>
       <img
+        class="header-image"
         src="./Images/photo_2022-06-29_13-48-43%20(2).jpg"
+        width="128"
+        height="128"
         alt="My photo(very attractive boy)"
       />
-    </p>
-    <p>
-      I am currently a first-course student of Belarusian State Univerity's
-      Faculty of Applied Maths and Computer Science. The spheres of my interest
-      in the world of IT are:
-    </p>
-    <ul>
-      <li>Front-End Web Development</li>
-      <li>Mobile Software</li>
-      <li>Game Design/Programming</li>
-    </ul>
-    <p>
-      I started self-studying
-      <a href="https://gamemaker.io/ru/gamemaker">GameMaker</a> as my first game
-      engine and after a year of solo work found a partner to collaborate with -
-      young brazilian artist
-      <a href="https://linktr.ee/kuremothri">Kure Mothri</a>. Together we
-      started making a game, which is still in progress - Sunset Forest.
-      <img
-        src="./Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(598).png"
-        alt="Start Menu Screenshot"
-      />
-      I am really keen on working in a team of trusted people after my
-      experience with Thirty Three Infinities Studio - this is how we called
-      ourselves after adding sound designer and composer to us. My current goals
-      are to learn how to develop mobile apps using React Native and games using
-      Unity and C# language.
-    </p>
-    <h2>Skills</h2>
-    <ul>
-      <li>GameMaker Engine</li>
-      <li>C++ language and OOP model</li>
-      <li>Game Programming Design Patterns</li>
-      <li>VCS Git (remote service GitHub)</li>
-      <li>QT Framework</li>
-      <li>HTML + CSS basics</li>
-      <li>GLSL basics (in 2D)</li>
-    </ul>
-    <h2>Code Examples</h2>
-    <p>
-      Here is a fragment shader code responsive for my day and night dynamic
-      transition in the Sunset Forest game. Although it is done mostly by
-      following online tutorial I had to make some changes to adopt it to our
-      own game. Also it requires working with color values and in-game light
-      objects.
-    </p>
-    <pre><code>varying vec2 v_vTexcoord;
-varying vec4 v_vColour;
+      <div class="header-info">
+        <h1>Timofey Petrikevich</h1>
+        <h2>BSU Student</h2>
+      </div>
+    </header>
+    <main>
+      <div class="additional-info">
+        <h2>Contact Information</h2>
+        <ul class="contacts-list">
+          <li class="email">Email: petrik3003@gmail.com</li>
+          <li class="discord">Discord: petrik33#0076</li>
+          <li class="telegram">Telegram: @IamAnAlligator</li>
+          <li class="phone">Phone: +375-29-199-04-88</li>
+        </ul>
+        <h2>Work Experience</h2>
+        <p>
+          I believe that my biggest work experience is Sunset Forest game
+          development I previously mentioned. It has been going since the summer
+          of 2020 and is planned to be finished by the end of this summer. You
+          can try the
+          <a href="https://petrik33.itch.io/sunset-forest">current build</a>
+          which dates back to the 3rd of May.
+        </p>
 
+        <h2>Education</h2>
+        <ul>
+          <li>Student of BSU FAMCS (1st course)</li>
+          <li>RS-School JS/Front-End - Stage0 (in progress)</li>
+          <li>Game Maker self-education</li>
+          <li>
+            <a href="https://developer.mozilla.org/ru/">MDN Web Docs</a>
+            <a href="https://developer.mozilla.org/ru/docs/Learn/HTML"
+              >&quot;HTML - structuring the web&quot;</a
+            >
+            course
+          </li>
+          <li>
+            <a href="https://web.dev/">Web.dev</a>
+            <a href="https://web.dev/i18n/ru/learn/css/">learn CSS</a> course
+          </li>
+        </ul>
+        <p>
+          I started self-studying
+          <a href="https://gamemaker.io/ru/gamemaker">GameMaker</a> as my first
+          game engine and after a year of solo work found a partner to
+          collaborate with - young brazilian artist
+          <a href="https://linktr.ee/kuremothri">Kure Mothri</a>. Together we
+          started making a game, which is still in progress - Sunset Forest.
+          <br />
+          <img
+            src="./Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(598).png"
+            alt="Start Menu Screenshot"
+            width="480"
+            height="270"
+          />
+          <br />
+          I am really keen on working in a team of trusted people after my
+          experience with Thirty Three Infinities Studio - this is how we called
+          ourselves after adding sound designer and composer to us. My current
+          goals are to learn how to develop mobile apps using React Native and
+          games using Unity and C# language.
+        </p>
+        <h2>Skills</h2>
+        <ul>
+          <li>GameMaker Engine</li>
+          <li>C++ language and OOP model</li>
+          <li>Game Programming Design Patterns</li>
+          <li>VCS Git (remote service GitHub)</li>
+          <li>QT Framework</li>
+          <li>HTML + CSS basics</li>
+          <li>GLSL basics (in 2D)</li>
+        </ul>
+      </div>
+
+      <div class="main-info">
+        <h2>About Me</h2>
+        <p>
+          I am currently a first-course student of Belarusian State Univerity's
+          Faculty of Applied Maths and Computer Science. The spheres of my
+          interest in the world of IT are:
+        </p>
+        <ul>
+          <li>Front-End Web Development</li>
+          <li>Mobile Software</li>
+          <li>Game Design/Programming</li>
+        </ul>
+        <h2>Code Example</h2>
+        <p>
+          Here is a fragment shader code responsive for my day and night dynamic
+          transition in the Sunset Forest game. Although it is done mostly by
+          following online tutorial I had to make some changes to adopt it to
+          our own game. Also it requires working with color values and in-game
+          light objects.
+        </p>
+        <div class="code-block">
+          <pre><code>varying vec2 v_vTexcoord;
+varying vec4 v_vColour;
 uniform vec3 col;
 uniform float con_sat_brt[5];
-
 uniform sampler2D lights;
-
 #define contrast con_sat_brt[0]
 #define saturation con_sat_brt[1]
 #define brightness con_sat_brt[2]
@@ -83,84 +130,84 @@ uniform sampler2D lights;
 
 void main()
 {
-	vec3 base_col = texture2D( gm_BaseTexture, v_vTexcoord).rgb;
-
-	float grey = dot(base_col,vec3(0.299,0.587,0.114));
-
-	//overlay
-	vec3 out_col = grey &gt; 0.5 ? 1.0 - (1.0 - 2.0 * (base_col - 0.5)) * (1.0 - col) : 2.0 * base_col * col;
-
-	//add saturation
-	out_col = mix(vec3(grey),out_col,saturation);
-
-	//add contrast
-	out_col = (out_col - 0.5) * contrast + 0.5;
-
-	//pop lights
-	out_col = out_col + pop_strength * max(grey - pop_threshold,0.0);
-
-	//add brightness
-	out_col = out_col + brightness;
-
-	//handle lights
-	vec3 lights_col = texture2D(lights, v_vTexcoord).rgb;
-	grey = dot(lights_col,vec3(0.333));
-	out_col = mix(out_col, base_col * normalize(lights_col + 0.05) * 3.0, grey);
-
-	out_col += 0.1 * lights_col; //Optional
-
-    gl_FragColor = vec4(out_col,1.0);
+  vec3 base_col = texture2D( gm_BaseTexture, v_vTexcoord).rgb;
+  float grey = dot(base_col,vec3(0.299,0.587,0.114));
+  //overlay
+  vec3 out_col = grey &gt; 0.5 ?
+    1.0 - (1.0 - 2.0 * (base_col - 0.5)) * (1.0 - col)
+    : 2.0 * base_col * col;
+  //add saturation
+  out_col = mix(vec3(grey),out_col,saturation);
+  //add contrast
+  out_col = (out_col - 0.5) * contrast + 0.5;
+  //pop lights
+  out_col = out_col + pop_strength * max(grey - pop_threshold,0.0);
+  //add brightness
+  out_col = out_col + brightness;
+  //handle lights
+  vec3 lights_col = texture2D(lights, v_vTexcoord).rgb;
+  grey = dot(lights_col,vec3(0.333));
+  out_col = mix(
+    out_col,
+    base_col * normalize(lights_col + 0.05) * 3.0,
+    grey);
+  out_col += 0.1 * lights_col; //Optional
+  gl_FragColor = vec4(out_col,1.0);
 }
+          </code></pre>
+        </div>
+        <h2>Languages</h2>
+        <h3>English</h3>
+        <p>
+          10 years of studying with personal teacher and 2 years of constant
+          speaking practice with native speakers and other foreigners speaking
+          English.
+        </p>
+        <ul>
+          <li>
+            B2+ level according to my personal experience and self-assessment
+          </li>
+          <li>C1 level of English according to EPAM Examinator Test</li>
+        </ul>
+        <p>
+          <img
+            src="./Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(978).png"
+            alt="Test completion screenshot"
+            width="480"
+            height="270"
+          />
+        </p>
+        <h3>Others</h3>
+        <ul>
+          <li>Russian - native speaker</li>
+          <li>Belarusian - secret admirer</li>
+          <li>Spanish - Duolingo 1st chapter (the owl made me write it)</li>
+        </ul>
+      </div>
+    </main>
 
-</code></pre>
-    <h2>Work Experience</h2>
-    <p>
-      I believe that my biggest work experience is Sunset Forest game
-      development I previously mentioned. It has been going since the summer of
-      2020 and is planned to be finished by the end of this summer. You can try
-      the
-      <a href="https://petrik33.itch.io/sunset-forest">current build</a> which
-      dates back to the 3rd of May.
-    </p>
-    <h2>Education</h2>
-    <ul>
-      <li>Student of BSU FAMCS (1st course)</li>
-      <li>RS-School JS/Front-End - Stage0 (in progress)</li>
-      <li>Game Maker self-education</li>
-      <li>
-        <a href="https://developer.mozilla.org/ru/">MDN Web Docs</a>
-        <a href="https://developer.mozilla.org/ru/docs/Learn/HTML"
-          >&quot;HTML - structuring the web&quot;</a
-        >
-        course
-      </li>
-      <li>
-        <a href="https://web.dev/">Web.dev</a>
-        <a href="https://web.dev/i18n/ru/learn/css/">learn CSS</a> course
-      </li>
-    </ul>
-    <h2>Languages</h2>
-    <h3>English</h3>
-    <p>
-      10 years of studying with personal teacher and 2 years of constant
-      speaking practice with native speakers and other foreigners speaking
-      English.
-    </p>
-    <ul>
-      <li>B2+ level according to my personal experience and self-assessment</li>
-      <li>C1 level of English according to EPAM Examinator Test</li>
-    </ul>
-    <p>
-      <img
-        src="./Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(978).png"
-        alt="Test completion screenshot"
-      />
-    </p>
-    <h3>Others</h3>
-    <ul>
-      <li>Russian - native speaker</li>
-      <li>Belarusian - secret admirer</li>
-      <li>Spanish - Duolingo 1st chapter (the owl made me write it)</li>
-    </ul>
+    <footer>
+      <a href="https://github.com/petrik33">
+        <img
+          class="footer-gh-logo"
+          src="./Images/GHLogo.png"
+          alt="GitHub Logo"
+          width="64"
+          height="64"
+        />
+      </a>
+      <span class="creation-time">08.07.2022</span>
+      <a
+        href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
+      >
+        <img
+          src="./Images/rs_school_js.svg"
+          alt="RS-School Logo"
+          width="128"
+          height="64"
+        />
+      </a>
+      <!-- <img src="./Images/rs_school_js.svg" alt="RS-School Logo" /> -->
+    </footer>
   </body>
 </html>
