@@ -41,6 +41,7 @@ header h2 {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   margin-block-start: 5%;
@@ -69,9 +70,8 @@ main {
 }
 
 div.additional-info {
-  flex: 1;
-  min-width: min-content;
-
+  width: 40%;
+  flex-grow: 1;
   padding-inline: 1em;
 
   color: #fdfdfd;
@@ -85,15 +85,20 @@ div.additional-info a {
 }
 
 div.main-info {
-  flex: 1;
-
-  min-width: min-content;
+  width: 40%;
+  flex-grow: 1;
   padding-inline: 1em;
 
   color: #2d3846;
 
   border-radius: 2em;
   background-color: #fdfdfd;
+}
+
+@media (max-width: 768px) {
+  main div {
+    width: 100%;
+  }
 }
 
 .code-block {
@@ -125,6 +130,7 @@ footer {
 
   text-align: center;
   font-size: 3ch;
+  color: white;
 }
 
 ul {
