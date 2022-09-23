@@ -1,0 +1,83 @@
+/* Properties Orginization
+
+    SASS INHERITANCE: @extend @mixin, e.g. clearfix
+
+    GENERATED CONTENT: content
+
+    POSITION AND LAYOUT: position z-index top bottom left right flexbox-properties float clear
+
+    DISPLAY AND VISIBILITY: display opacity transform
+
+    CLIPPING: overflow clip
+
+    ANIMATION: animation transition
+
+    BOX MODEL (OUT -> IN): margin box-shadow border border-radius box-sizing width height padding
+
+    BACKGROUND: background cursor
+
+    TYPOGRAPHY: font-size line-height font-family font-weight font-style
+text-align text-transform word-spacing color
+
+    PSEUDO-CLASSES & PSEUDO-ELEMENTS (NESTED RULES): :hover :focus :active :before
+:after :first-child :last-child
+
+*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+header {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        overflow: hidden;
+
+        background-color: black;
+
+        width: 100vw;
+        height: 80px;
+
+        ul {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            padding: 0;
+            margin: 0;
+
+            list-style-type: none;
+
+            li {
+                display: inline;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                a.header-logo {
+                    display: inline-block;
+    
+                    border: 1px solid white;
+                    width: min-content;
+
+                    font-size: 1.25em;
+                }
+    
+                a.nav-about {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
