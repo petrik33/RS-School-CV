@@ -25,57 +25,181 @@ text-align text-transform word-spacing color
 */
 
 html {
+    min-width: 1600px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    min-width: 1600px;
     font-size: 1rem;
 }
 
-header {
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
+button.basic {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-style: none;
 
-        overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+button.basic:hover {
+    background: #E47209;
+}
+
+button.basic:active {
+    background: green;
+}
+
+section.head-section {
+    width: 100%;
+    min-width: 1600px;
+    height: 780px;
+    margin: 0%;
+    padding: 0%;
+
+    div.giant-panda {
+        display: flex;
+        justify-content: center;
+        img {
+            min-width: 1600px;
+            width: 100%;
+        }
+    }
+
+    img.ellipse-6 {
+        position: absolute;
+        top: 92px;
+        left: calc(50% - 465px/2 + 239.5px);;
+        width: 465px;
+        height: 465px;
+    }
+
+    h1 {
+        position: absolute;
+
+        margin: 0%;
+        padding: 0%;
+        width: 500.31px;
+        height: 400px;
+        left: calc(50% - 500.31px/2 + 330.15px);
+        top: 166px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 106.496px;
+        line-height: 75%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        span.favorite {
+            color: #FFEE2E;
+        }
+    }
+
+    button#header-watch {
+        position: absolute;
+        width: 298px;
+        height: 54px;
+        left: calc(50% - 298px/2 + 332px);
+        top: 626px;
+
+        border-radius: 25px;
+    }
+
+    header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+        min-width: 1600px;
+        height: 82px;
+    
         background-color: black;
-
-        width: 100vw;
-        height: 80px;
-
-        ul {
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-
-            padding: 0;
+        
+        nav {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            
+            box-sizing: border-box;
+            padding-block: 0;
+            padding-inline: 7%;
             margin: 0;
+            width: 100%;
+            height: 100%;
+            
+            ul {
+                position: absolute;
+                top: 0%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
 
-            list-style-type: none;
+                margin: 0%;
+                padding: 0;
+                width: calc(100% - 14%);
+                height: 100%;
 
-            li {
-                display: inline;
-                a {
-                    text-decoration: none;
-                    color: white;
+                list-style-type: none;
+    
+                li {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex: 0 1 auto;
+                    margin-inline: 29px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+    
+                    a.nav-logo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        border: 1px solid white;
+                        padding: auto;
+                        width: 82px;
+                        height: 52px;
+    
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+        
+                    a.nav-about {
+                        color: orange;
+                    }
                 }
 
-                a.header-logo {
-                    display: inline-block;
-    
-                    border: 1px solid white;
-                    width: min-content;
-
-                    font-size: 1.25em;
-                }
-    
-                a.nav-about {
-                    color: orange;
+                li:nth-last-of-type(1) {
+                    display: flex;
+                    justify-content: flex-end;
+                    flex: 2 1 auto;
                 }
             }
         }
