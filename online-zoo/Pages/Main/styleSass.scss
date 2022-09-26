@@ -40,26 +40,69 @@ body {
     width: 100%;
     min-width: 1600px;
     font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
 }
 
-button {
+h2 {
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.subtitle {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.small-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.small-paragraph {
+    font-size: 15px;
+    line-height: 120%;
+}
+
+button:hover {
     cursor: pointer;
 }
 
-button.basic {
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-style: none;
-
+button.text-button {
     text-align: center;
     text-transform: uppercase;
     color: white;
-
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 140%;
 }
+
+button.basic {
+    width: 298px;
+    height: 54px;
+    padding: 0%;
+
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-style: none;
+
+    font-weight: 500;
+}
+
+button.basic.rounded {
+    border-radius: 25px;
+}
+
+button.circle-button {
+    box-sizing: border-box;
+    width: 62px;
+    height: 62px;
+
+    border-radius: 31px;
+
+    font-size: 24px;
+    padding: 0%;
+}
+
 
 button.basic:hover {
     background: #E47209;
@@ -69,12 +112,19 @@ button.basic:active {
     background: green;
 }
 
-section.head-section {
+div.background-image {
+    padding: 0%;
+    margin: 0%;
+}
+
+section {
     width: 100%;
-    min-width: 1600px;
-    height: 780px;
     margin: 0%;
     padding: 0%;
+}
+
+section.head-section {
+    height: 780px;
 
     div.giant-panda {
         display: flex;
@@ -120,12 +170,8 @@ section.head-section {
 
     button#header-watch {
         position: absolute;
-        width: 298px;
-        height: 54px;
         left: calc(50% - 298px/2 + 332px);
         top: 626px;
-
-        border-radius: 25px;
     }
 
     header {
@@ -207,5 +253,136 @@ section.head-section {
                 }
             }
         }
+    }
+}
+
+section.backstage {
+    margin: 140px 0 180px;
+    padding: 0%;
+    div.backstage-center {
+        display: flex;
+        justify-content: space-between;
+
+        width: 1160px;
+        height: 403px;
+        margin-block: 0%;
+        margin-inline: auto;
+        padding: 0%;
+
+        div.backstage-text {
+            margin-left: 87px;
+            padding-block: 0;
+
+            h2 {
+                margin-block: 0px 20px;
+            }
+            .subtitle {
+                margin-block: 54px 34px;
+            }
+            p {
+                margin-block: 0;
+            }
+        }
+    }
+
+    #flower-image{
+        position: relative;
+
+        width: 293px;
+        height: 605px;
+
+        background: url(../../Assets/Images/flower_foto1.png);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    #palm-image{
+        position: absolute;
+
+        width: 880px;
+        height: 460px;
+        left: (-588px);
+        top: 2149px;
+
+        background: url(../../Assets/Images/palm_foto.png);
+    }
+
+    #strelitza-image{
+        position: absolute;
+
+        width: 368px;
+        height: 275px;
+        right: -368px;
+        top: 2334px;
+
+        background: url(../../Assets/Images/strelitzia\ 1.png);
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+section.animal-cards {
+    width: 1158px;
+    height: 872px;
+    margin-inline: auto;
+    margin-block: 180px 80px;
+    padding: 0%;
+    div.animal-cards-grid {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        row-gap: 20px;
+        column-gap: 30px;
+
+        justify-content: space-between;
+        justify-items: center;
+        align-content: space-between;
+
+        display: grid;
+
+        figure {
+            box-sizing: border-box;
+            width: 366px;
+            height: 426px;
+            margin: 0%;
+            padding: 0%;
+            border: 1px solid orange;
+            border-radius: 5px;
+
+            img {
+                box-sizing: border-box;
+                width: 100%;
+                height: 366px;
+            }
+
+            figcaption {
+                margin-block: 8px 14px;
+                p {
+                    margin-block: 0px;
+                    margin-inline: 16px 56px;
+                }
+            }
+        }
+    }
+
+    button#animal-cards-left {
+        padding: 0%;
+        margin: 0%;
+        position: relative;
+        right: calc(62px + 31px);
+        bottom: calc(50% + 93px);
+    }
+    
+    button#animal-cards-right {
+        position: relative;
+        left: calc(100% - 31px);
+        bottom: calc(50% + 93px);
+    }
+
+    button#animal-cards-choose-favorite {
+        margin: 80px calc(50% - 298px) 100px;
     }
 }
