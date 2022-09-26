@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleSass.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PetStory</title>
+  </head>
+  <body>
+    <section class="head-section">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="nav-logo">PetStory<br />online</a>
+            </li>
+            <li><a href="index.html" class="nav-about">About</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Zoos</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li>
+              <a href="https://www.figma.com/" class="nav-copyright"
+                >Designed by ... &copy;</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="giant-panda">
+        <img
+          src="../../Assets/Images/Giant Panda.png"
+          alt="Giant Panda"
+          width="1600"
+          height="780"
+        />
+      </div>
+      <img
+        src="../../Assets/Images/Ellipse 6.svg"
+        alt="Circle"
+        class="ellipse-6"
+      />
+      <h1>Watch your <span class="favorite">favorite</span> animal online</h1>
+      <button type="button" class="basic text-button rounded" id="header-watch">
+        Watch Online
+      </button>
+    </section>
+    <section class="backstage">
+      <div class="backstage-center">
+        <img
+          src="../../Assets/Images/bamboo-cap.png"
+          alt="Black and white photo of and old man in japanese hat."
+        />
+        <div class="backstage-text">
+          <h2>The Backstage of the Wilderness World.</h2>
+          <p>
+            The site was founded on the basis of a volunteer movement to protect
+            and care for animals.
+          </p>
+          <p class="subtitle">How it works</p>
+          <p>
+            The main goal is to help the animals, as well as the nature reserves
+            and zoos where they are kept. We are currently working on video
+            projects targeting pandas in China, eagles on an island near Los
+            Angeles, alligators in Florida and gorillas in the Congo. These have
+            a total of more than 1,500 mammals and reptiles.
+          </p>
+        </div>
+      </div>
+      <!-- <div id="flower-image" class="background-image"></div>
+      <div id="palm-image" class="background-image"></div>
+      <div id="strelitza-image" class="background-image"></div> -->
+      <section class="animal-cards">
+        <div class="animal-cards-grid">
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Pandas.png"
+              alt="Pandas near swings"
+            />
+            <figcaption>
+              <p class="small-heading">Giant Pandas</p>
+              <p class="small-paragraph">Native to Southwest China</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Eagle.png"
+              alt="Flying Eagle"
+            />
+            <figcaption>
+              <p class="small-heading">Eagles</p>
+              <p class="small-paragraph">Native to South America</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Gorilla.png"
+              alt="Gorilla"
+            />
+            <figcaption>
+              <div class="animal-card-caption">
+                <p class="small-heading">Gorillas</p>
+                <p class="small-paragraph">Native to Congo</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Sloth.png"
+              alt="Sloth hanging on a tree branch"
+            />
+            <figcaption>
+              <p class="small-heading">Two-Toed Sloth</p>
+              <p class="small-paragraph">Mesoamerica, South America</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Cheetahs.png"
+              alt="Big cheetah and baby-cheetah"
+            />
+            <figcaption>
+              <p class="small-heading">Cheetahs</p>
+              <p class="small-paragraph">Native to Africa</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../../Assets/Images/Animals Grid/Penguin.png"
+              alt="Penguin"
+            />
+            <figcaption>
+              <p class="small-heading">Penguins</p>
+              <p class="small-paragraph">Native to Antarctica</p>
+            </figcaption>
+          </figure>
+        </div>
+        <button
+          type="button"
+          class="basic text-button circle-button"
+          id="animal-cards-left"
+        >
+          &leftarrow;
+        </button>
+        <button
+          type="button"
+          class="basic text-button circle-button"
+          id="animal-cards-right"
+        >
+          &rightarrow;
+        </button>
+        <button
+          type="button"
+          class="basic text-button rounded"
+          id="animal-cards-choose-favorite"
+        >
+          Choose your favorite
+        </button>
+      </section>
+    </section>
+  </body>
+</html>

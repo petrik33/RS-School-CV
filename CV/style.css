@@ -1,0 +1,147 @@
+html {
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin-inline: auto;
+  width: 80vw;
+  padding-inline: 1.5em;
+
+  border: 3px solid #ac375a;
+  border-radius: 2em;
+  background-color: #c4b6b9;
+}
+
+header {
+  display: flex;
+
+  margin-block-start: 2em;
+  margin-inline: auto;
+
+  height: 10em;
+  width: 100%;
+
+  border: 3px solid #ac375a;
+  border-radius: 5em;
+
+  background-color: #ac375a;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header h2 {
+  font-size: 2em;
+  margin-top: -0.75em;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin-block-start: 5%;
+  width: 100%;
+
+  line-height: 1.5em;
+}
+
+.header-info {
+  margin-inline: auto;
+  margin-block: auto;
+
+  height: 128;
+
+  text-align: center;
+  color: white;
+}
+
+.header-image {
+  float: left;
+
+  margin-inline-start: 1em;
+  margin-block: 1em;
+
+  border-radius: 5em;
+}
+
+div.additional-info {
+  width: 40%;
+  flex-grow: 1;
+  padding-inline: 1em;
+
+  color: #fdfdfd;
+
+  border-radius: 2em;
+  background-color: #2d3846;
+}
+
+div.additional-info a {
+  color: #fdfdfd;
+}
+
+div.main-info {
+  width: 40%;
+  flex-grow: 1;
+  padding-inline: 1em;
+
+  color: #2d3846;
+
+  border-radius: 2em;
+  background-color: #fdfdfd;
+}
+
+@media (max-width: 768px) {
+  main div {
+    width: 100%;
+  }
+}
+
+.code-block {
+  padding-inline: 1em;
+
+  border: 1px solid #c4b6b9;
+
+  font-size: 0.9em;
+  font-family: 'Fira Code', monospace;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+
+  margin-block: 2%;
+  height: 64px;
+
+  background-color: #ac375a;
+  border-radius: 32px;
+}
+
+.footer-gh-logo {
+  border-radius: 50%;
+}
+
+.creation-time {
+  align-self: center;
+
+  text-align: center;
+  font-size: 3ch;
+  color: white;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ac375a; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
